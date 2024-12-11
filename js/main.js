@@ -70,6 +70,21 @@
 	/*==============================
 	Carousel
 	==============================*/
+	if (document.querySelector('.hero')) {
+		new Splide('.hero', {
+			type: 'loop',
+			perPage: 1,
+			drag: true,
+			pagination: true,
+			speed: 1200,
+			gap: 24,
+			arrows: false,
+			focus: 0,
+			autoplay: true,         // Enable autoplay
+			interval: 1000,         // Set autoplay interval (in ms, 3000ms = 3 seconds)
+		}).mount();
+	}
+	
 	if (document.querySelector('.home__carousel')) {
 		new Splide('.home__carousel', {
 			type: 'loop',
@@ -82,6 +97,8 @@
 			gap: 30,
 			arrows: false,
 			focus: 0,
+			autoplay: true,         // Enable autoplay
+			interval: 1000,         // Set autoplay interval
 			breakpoints: {
 				575: {
 					gap: 24,
@@ -111,26 +128,12 @@
 			}
 		}).mount();
 	}
-
-	if (document.querySelector('.hero')) {
-		new Splide('.hero', {
-			type: 'loop',
-			perPage: 1,
-			drag: true,
-			pagination: true,
-			speed: 1200,
-			gap: 24,
-			arrows: false,
-			focus: 0,
-		}).mount();
-	}
-
-
+	
 	if (document.querySelector('.section__caarousel')) {
 		var elms = document.getElementsByClassName('section__caarousel');
-
-		for ( var i = 0; i < elms.length; i++ ) {
-			new Splide(elms[ i ], {
+	
+		for (var i = 0; i < elms.length; i++) {
+			new Splide(elms[i], {
 				type: 'loop',
 				perPage: 3,
 				drag: true,
@@ -141,6 +144,8 @@
 				gap: 24,
 				arrows: false,
 				focus: 0,
+				autoplay: true,         // Enable autoplay
+				interval: 1000,         // Set autoplay interval
 				breakpoints: {
 					575: {
 						arrows: false,
@@ -162,12 +167,12 @@
 			}).mount();
 		}
 	}
-
+	
 	if (document.querySelector('.section__carousel')) {
 		var elms = document.getElementsByClassName('section__carousel');
-
-		for ( var i = 0; i < elms.length; i++ ) {
-			new Splide(elms[ i ], {
+	
+		for (var i = 0; i < elms.length; i++) {
+			new Splide(elms[i], {
 				type: 'loop',
 				perPage: 4,
 				drag: true,
@@ -178,6 +183,8 @@
 				gap: 24,
 				arrows: false,
 				focus: 0,
+				autoplay: true,         // Enable autoplay
+				interval: 1000,         // Set autoplay interval
 				breakpoints: {
 					575: {
 						arrows: false,
@@ -199,14 +206,12 @@
 			}).mount();
 		}
 	}
-
-
-
+	
 	if (document.querySelector('.section__roadmap')) {
 		var elms = document.getElementsByClassName('section__roadmap');
-
-		for ( var i = 0; i < elms.length; i++ ) {
-			new Splide(elms[ i ], {
+	
+		for (var i = 0; i < elms.length; i++) {
+			new Splide(elms[i], {
 				type: 'loop',
 				perPage: 3,
 				drag: true,
@@ -217,6 +222,8 @@
 				gap: 30,
 				arrows: false,
 				focus: 0,
+				autoplay: true,         // Enable autoplay
+				interval: 3000,         // Set autoplay interval
 				breakpoints: {
 					767: {
 						gap: 20,
@@ -235,7 +242,7 @@
 			}).mount();
 		}
 	}
-
+	
 	/*==============================
 	Section bg
 	==============================*/

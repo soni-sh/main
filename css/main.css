@@ -62,7 +62,7 @@ html {
 }
 html,
 body {
-  height: 100%;
+  /* height: 100%; */
   /* padding-top: 30px; */
   overflow-x: hidden;
 }
@@ -70,7 +70,13 @@ body {
   /* font-family: 'Source Sans Pro', sans-serif; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
   font-weight: 400;
-  background-color: #1a191f;
+  /* background-color: #1a191f; */
+  background-image: url('../../main/img/new-images/banner-one.png');
+  background-size: cover; /* Ensures the image covers the entire viewport */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Makes the background image fixed when scrolling */
+  /* min-height: 100%; Ensures the body fills the entire viewport */
   -webkit-font-smoothing: antialiased;
 }
 button {
@@ -187,15 +193,15 @@ marquee
   position: relative;
   width: 100vw;
   max-width: 100%;
-  min-height: 3rem;
+  /* min-height: 1rem; */
   overflow-x: hidden;
   /* font-family: "Merriweather", serif; */
   /* text-transform: uppercase; */
-  color: #fff;
+  color: #111;
   /* font-size: 18px; */
   /* color: rgba(255, 255, 255, 1); */
-  /* background-color: #f9aa00a8; */
-  background: radial-gradient(circle, #075726, #f9aa00a8, #0a71b1, #861908, #69700a);
+  background-color: #fff;
+  /* background: radial-gradient(circle, #075726, #f9aa00a8, #0a71b1, #861908, #69700a); */
   margin: 10px 0 0;
   filter: blur(1px);
   
@@ -230,7 +236,7 @@ marquee
   font-size: 22px;
   width: auto;
   transition: all 0.1s ease-in-out;
-  padding:7px 0;
+  padding:3px 0;
 }
 
 @keyframes marquee {
@@ -687,7 +693,7 @@ marquee
   /* margin-top: 70px; */
   position: relative;
   display: block;
-  background-color: #1a191f;
+  /* background-color: #1a191f; */
   /* padding: 50px 0; */
   overflow: hidden;
 }
@@ -1229,14 +1235,14 @@ paragraph
 ========================== */
 .paragraph{
   text-align:justify;
-  color: #dfce32;
+  color: #fff;
   font-size: 18px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* padding: 0 40px; */
   border-bottom: 1px solid #eee;
 }
 .paragraph:hover{
-  color: #e68f0c;
+  color: #bd9512;
 }
 
 
@@ -1494,6 +1500,7 @@ paragraph
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
+
   position: relative;
   margin-top: 24px;
 }
@@ -1509,7 +1516,7 @@ paragraph
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-  /* background-color: #000; */
+  background-color: #000;
 }
 .item__cover__gallery{
   display: flex;
@@ -3204,7 +3211,7 @@ paragraph
 	Footer
 ==============================*/
 .footer {
-  background-color: #1a191f;
+  /* background-color: #1a191f !important; */
   border-top: 1px solid #222028;
 }
 .footer__content {

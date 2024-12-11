@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="webfont/tabler-icons.min.css">
 
 	<!-- Favicons -->
-	<link rel="icon" type="image/png" href="img/new-images/logo1.png" sizes="64x64">
+	<link rel="icon" type="image/png" href="img/new-images/logooo.png" sizes="64x64">
 	<!-- <link rel="apple-touch-icon" href="icon/favicon-32x32.png"> -->
 
 	<meta name="description" content="Online Movies, TV Shows & Cinema HTML Template">
@@ -31,7 +31,7 @@
 
 <body>
 	<div class="container nav">
-		<img src="img/new-images/logo-d2.png" alt="Logo" class="logo">
+		<img src="img/new-images/logooo.png" alt="Logo" class="logo">
 		<h1>भारत गौरव सम्मान <br>Bharat Gaurav Samman</h1>
 	  </div>
 	  
@@ -41,7 +41,7 @@
 		  align-items: center; /* Vertically center the items */
 		  justify-content: center; /* Horizontally center the items */
 		  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
-		  padding: 10px; /* Optional, for spacing */
+		  /* padding: 10px; Optional, for spacing */
 		}
 	  
 		.nav h1 {
@@ -55,7 +55,25 @@
 		  width: 150px;
 		  height: auto;
 		}
-	  
+		
+		/* Adjust the layout for screens with a max width of 375px */
+@media (max-width: 375px) {
+  .nav {
+    flex-direction: row; /* Display items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .logo {
+    width: 80px !important; /* Adjust the logo size for smaller screens */
+  }
+
+  .nav h1 {
+    font-size: 1.2rem; /* Adjust the font size for smaller screens */
+    margin-left: 10px; /* Add some space between the logo and the text */
+  }
+}
+
 		/* Make the layout more responsive */
 		@media (max-width: 768px) {
 		  .nav {
@@ -174,6 +192,22 @@
             margin-top: 50px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+		   /* Responsive Styling */
+		   @media screen and (max-width: 375px){
+			.menu-bar {
+            position: fixed;
+            top: 35px;
+            right:15px;
+            background-color: #333;
+            width: 35px;
+            height: auto;
+            /* padding:5px; */
+            display: flex;
+            justify-content:center;
+            z-index: 1000;
+            border-radius: 5px;
+        }
+		   }
     </style>
 
     <!-- Page Content -->
@@ -374,7 +408,7 @@
 						<div class="splide__track">
 							<ul class="splide__list">
 								<li class="splide__slide">
-									<div class="hero__slide" data-bg="img/new-images/banner-front.png">
+									<div class="hero__slide" data-bg="img/new-images/bbanner.png">
 										<div class="hero__content" style="padding-top: 50px;">
 											<!-- <h2 class="hero__title">भारत गौरव सम्मान <br>BHARAT GAURAV SAMMAN  </h2> -->
 											<!-- <p class="hero__text">The Bharat Gaurav Award Foundation instituted the Bharat Gaurav Awards and the Lifetime Achievement Awards in the year 2024 with a view of giving recognition and motivation to the unsung heroes across the country who are working hard for the betterment of the lives of the underprivileged. The awards are conferred by leading lights of the Indian Government every year on a grand stage in New Delhi at a gala awards ceremony. </p> -->
@@ -466,153 +500,125 @@
 	
     <!-- <hr style="border: 2px solid;"> -->
 
-<!-- section -->
-<section class="section section--border">
-	<div class="container">
-	  <div class="row">
-		<!-- section title -->
-		<div class="col-12">
-		  <div class="section__title-wrap" style="margin-bottom: 24px;">
-			<!-- <h2 class="section__title">Videos</h2> -->
-			<a href="catalogCopy.html" class="section__view section__view--carousel">View All</a>
-		  </div>
-		</div>
-		<!-- end section title -->
-  
-		<!-- video grid layout (2 rows) -->
-		<div class="col-12">
-		  <div class="row">
-			<!-- First row of videos -->
-			<div class="col-md-4">
-			  <div class="item item--carousel">
-				<div class="item__cover">
-				  <div class="video-gallery">
-					<div class="video-item">
-					  <video controls autoplay muted>
-						<source src="img/new-images/video.1.mp4" type="video/mp4">
-						<!-- Fallback for unsupported formats -->
-						Your browser does not support the video tag.
-					  </video>
+		<!-- section -->
+	<section class="section section--border ">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12">
+					<div class="section__title-wrap" style="margin-bottom:24px ;">
+						<!-- <h2 class="section__title">Videos</h2> -->
+						<a href="catalogCopy.html" class="section__view section__view--carousel">View All</a>
 					</div>
-				  </div>
 				</div>
-			  </div>
-			</div>
-  
-			<div class="col-md-4">
-			  <div class="item item--carousel">
-				<div class="item__cover">
-				  <div class="video-gallery">
-					<div class="video-item">
-					  <video controls autoplay muted>
-						<source src="img/new-images/video12.mp4" type="video/mp4">
-						<!-- Fallback for unsupported formats -->
-						Your browser does not support the video tag.
-					  </video>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			</div>
+				<!-- end section title -->
 
-			<div class="col-md-4">
-				<div class="item item--carousel">
-				  <div class="item__cover">
-					<div class="video-gallery">
-					  <div class="video-item">
-						<video controls autoplay muted>
-						  <source src="img/new-images/video13.mp4" type="video/mp4">
-						  <!-- Fallback for unsupported formats -->
-						  Your browser does not support the video tag.
-						</video>
-					  </div>
-					</div>
-				  </div>
-				</div>
-			  </div>
+				<!-- carousel -->
+				<div class="col-12">
+					<div class="section__caarousel splide splide--content">
+						<div class="splide__arrows">
+							<button class="splide__arrow splide__arrow--prev" type="button">
+								<i class="ti ti-chevron-left"></i>
+							</button>
+							<button class="splide__arrow splide__arrow--next" type="button">
+								<i class="ti ti-chevron-right"></i>
+							</button>
+						</div>
 
-			<!-- Second row of videos -->
-			<div class="col-md-4">
-				<div class="item item--carousel">
-				  <div class="item__cover">
-					<div class="video-gallery">
-					  <div class="video-item">
-						<video controls autoplay muted>
-						  <source src="img/new-images/Untitled design 4.mp4" type="video/mp4">
-						  <!-- Fallback for unsupported formats -->
-						  Your browser does not support the video tag.
-						</video>
-					  </div>
+						<div class="splide__track">
+							<ul class="splide__list">
+							  <li class="splide__slide">
+								<div class="item item--carousel">
+								  <div class="item__cover">
+									<div class="video-gallery">
+									  <div class="video-item">
+										<video controls autoplay muted >
+										  <source src="img/new-images/v-1.mp4" type="video/mp4">
+										  <!-- Fallback for unsupported formats -->
+										  Your browser does not support the video tag.
+										</video>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							  </li>
+							  <li class="splide__slide">
+								<div class="item item--carousel">
+								  <div class="item__cover">
+									<div class="video-gallery">
+									  <div class="video-item">
+										<video controls autoplay muted >
+										  <source src="img/new-images/v-2.mp4" type="video/mp4">
+										  <!-- Fallback for unsupported formats -->
+										  Your browser does not support the video tag.
+										</video>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							  </li>
+							  <li class="splide__slide">
+								<div class="item item--carousel">
+								  <div class="item__cover">
+									<div class="video-gallery">
+									  <div class="video-item">
+										<video controls autoplay muted>
+										  <source src="img/new-images/v-3.mp4"  type="video/mp4">
+										  <!-- Fallback for unsupported formats -->
+										  Your browser does not support the video tag.
+										</video>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							  </li>
+							  <li class="splide__slide">
+								<div class="item item--carousel">
+								  <div class="item__cover">
+									<div class="video-gallery">
+									  <div class="video-item">
+										<video controls autoplay muted>
+										  <source src="img/new-images/v-4.mp4"  type="video/mp4">
+										  <!-- Fallback for unsupported formats -->
+										  Your browser does not support the video tag.
+										</video>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							  </li>
+							</ul>
+						  </div>
+						  
 					</div>
-				  </div>
 				</div>
-			  </div>
-  
-			<!-- Second row of videos -->
-			<div class="col-md-4">
-			  <div class="item item--carousel">
-				<div class="item__cover">
-				  <div class="video-gallery">
-					<div class="video-item">
-					  <video controls autoplay muted>
-						<source src="img/new-images/Untitled design (1).mp4" type="video/mp4">
-						<!-- Fallback for unsupported formats -->
-						Your browser does not support the video tag.
-					  </video>
-					</div>
-				  </div>
-				</div>
-			  </div>
+				<!-- end carousel -->
 			</div>
-			<!-- Second row of videos -->
-			<div class="col-md-4">
-				<div class="item item--carousel">
-				  <div class="item__cover">
-					<div class="video-gallery">
-					  <div class="video-item">
-						<video controls autoplay muted>
-						  <source src="img/new-images/Untitled design (2).mp4" type="video/mp4">
-						  <!-- Fallback for unsupported formats -->
-						  Your browser does not support the video tag.
-						</video>
-					  </div>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  <!-- Second row of videos -->
-			
-  
-			<!-- Add more video items here if needed -->
-  
-		  </div>
 		</div>
-		<!-- end video grid layout -->
-  
-	  </div>
-	</div>
-  </section>
-  <!-- end section -->
-  
-  <!-- Add this script -->
-  <script>
-	document.addEventListener("DOMContentLoaded", function() {
-	  // Get all video elements
-	  const videos = document.querySelectorAll('.video-player');
-	  
-	  videos.forEach(video => {
-		// Add event listener for play event
-		video.addEventListener('play', function() {
-		  // Pause all other videos when one video is played
-		  videos.forEach(otherVideo => {
-			if (otherVideo !== video) {
-			  otherVideo.pause();
-			}
-		  });
-		});
-	  });
-	});
-  </script>
+	</section>
+	<!-- end section -->
+
+	
+<!-- Add this script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get all video elements
+    const videos = document.querySelectorAll('.video-player');
+    
+    videos.forEach(video => {
+      // Add event listener for play event
+      video.addEventListener('play', function() {
+        // Pause all other videos when one video is played
+        videos.forEach(otherVideo => {
+          if (otherVideo !== video) {
+            otherVideo.pause();
+          }
+        });
+      });
+    });
+  });
+</script>
+
   
 
 
@@ -643,7 +649,7 @@
 				<!-- section title -->
 				<div class="col-12">
 					<div class="section__title-wrap">
-						<h2 class="section__title">Gallery</h2>
+						<!-- <h2 class="section__title">Gallery</h2> -->
 						<a href="catalogCopy1.html" class="section__view section__view--carousel">View All</a>
 					</div>
 				</div>
@@ -1474,7 +1480,7 @@
 	<div class="footer-content">
 	  <aside class="footer-brand">
 		<div class="footer-icon p-0">
-			<a href="index.html"><img src="img/new-images/logo1.png" alt="image"></a>
+			<a href="index.html"><img src="img/new-images/logooo.png" alt="image"></a>
 		</div>
 		<p class="brand-text">
 		  Bharat Gaurav Samman

@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="webfont/tabler-icons.min.css">
 
 	<!-- Favicons -->
-	<link rel="icon" type="image/png" href="img/new-images/logo1.png" sizes="64x64">
+	<link rel="icon" type="image/png" href="img/new-images/logooo.png" sizes="64x64">
 	<!-- <link rel="apple-touch-icon" href="icon/favicon-32x32.png"> -->
 
 	<meta name="description" content="Online Movies, TV Shows & Cinema HTML Template">
@@ -29,26 +29,89 @@
 </head>
 
 <body>
-	<div class="container text-center">
-		<!-- <img src="img/new-images/bg-logo.png" alt="Logo" class="logo"> -->
-		 <h1>Bharat Gaurav Samman</h1>
+	<div class="container nav">
+		<img src="img/new-images/logooo.png" alt="Logo" class="logo">
+		<h1>भारत गौरव सम्मान <br>Bharat Gaurav Samman</h1>
 	  </div>
+	  
 	  <style>
-		h1{
-			/* width: 100px; */
-			color: #D4B754;
+		.nav {
+		  display: flex;
+		  align-items: center; /* Vertically center the items */
+		  justify-content: center; /* Horizontally center the items */
+		  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+		  padding: 10px; /* Optional, for spacing */
+		}
+	  
+		.nav h1 {
+		  color: #fff;
+		  font-family: "Roboto", sans-serif;
+		  text-align: center; /* Center the text */
+		  margin: 0 10px; /* Add some space between the logo and text */
+		}
+	  
+		.logo {
+		  width: 150px;
+		  height: auto;
+		}
+		
+		/* Adjust the layout for screens with a max width of 375px */
+@media (max-width: 375px) {
+  .nav {
+    flex-direction: row; /* Display items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .logo {
+    width: 80px !important; /* Adjust the logo size for smaller screens */
+  }
+
+  .nav h1 {
+    font-size: 1.2rem; /* Adjust the font size for smaller screens */
+    margin-left: 10px; /* Add some space between the logo and the text */
+  }
+}
+
+		/* Make the layout more responsive */
+		@media (max-width: 768px) {
+		  .nav {
+			flex-direction: row; /* Ensure the logo and text are in a row on mobile */
+			justify-content: flex-start; /* Align to the left side */
+		  }
+	  
+		  .logo {
+			width: 120px; /* Adjust the logo size for smaller screens */
+		  }
+	  
+		  .nav h1 {
+			font-size: 1.2rem; /* Adjust the font size for smaller screens */
+			margin-left: 10px; /* Add some space between the logo and the text */
+		  }
 		}
 	  </style>
-	<header>
+	  
+	  <header>
 		<!-- Menu Bar -->
    <div class="menu-bar">
 	   <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 	   <div id="menu" class="menu">
 		   <ul>
 			   <li><a href="index.html">Home</a></li>
-			   <li><a href="catalogCopy.html">videos</a></li>
-			   <li><a href="catalogCopy1.html">Gallery</a></li>
-			   <!-- <li><a href="#">Contact</a></li> -->
+			   <li><a href="">Awards</a></li>
+			   <li class="menuu-toggle">
+				   <a class="menu-toggle dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			   Gallery
+				   </a>
+				   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					 <li><a class="dropdown-item" href="catalogCopy1.html">Photos</a></li>
+					 <li><a class="dropdown-item" href="catalogCopy.html">Videos</a></li>
+				   </ul>
+				 </li>
+			   <li><a href="catalogCopy1.html">Category</a></li>
+			   <li><a href="#">Directors & Team</a></li>
+			   <li><a href="#">Contact</a></li>
+			   <li><a href="#">Testimonials</a></li>
 		   </ul>
 	   </div>
    </div>
@@ -64,20 +127,20 @@
 	   /* Menu Bar Styling */
 	   .menu-bar {
 		   position: fixed;
-		   top: 5px;
-		   right:10px;
+		   top: 58px;
+		   right:22px;
 		   background-color: #333;
-		   width: 50px;
+		   width: 40px;
 		   height: auto;
 		   /* padding:5px; */
 		   display: flex;
 		   justify-content:center;
 		   z-index: 1000;
-		   border-radius: 10px;
+		   border-radius: 5px;
 	   }
 
 	   .menu-toggle {
-		   font-size: 30px;
+		   font-size: 25px;
 		   color: white;
 		   /* color: #333; */
 		   background: none;
@@ -108,6 +171,14 @@
 		   text-decoration: none;
 		   font-size: 18px;
 	   }
+	   .dropdown-menu{
+		   background: #333;
+	   }
+	   #navbarDropdown ul li a{
+		   color: #fff;
+		   text-decoration: none;
+		   font-size: 18px;
+	   }
 
 	   .menu ul li a:hover {
 		   color: #f1c40f;
@@ -117,8 +188,24 @@
 	   .content {
 		   padding: 50px;
 		   margin-top: 50px;
-		   font-family: Arial, sans-serif;
+		   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	   }
+		  /* Responsive Styling */
+		  @media screen and (max-width: 375px){
+		   .menu-bar {
+		   position: fixed;
+		   top: 35px;
+		   right:15px;
+		   background-color: #333;
+		   width: 35px;
+		   height: auto;
+		   /* padding:5px; */
+		   display: flex;
+		   justify-content:center;
+		   z-index: 1000;
+		   border-radius: 5px;
+	   }
+		  }
    </style>
 
    <!-- Page Content -->
@@ -734,11 +821,11 @@
 				<!-- end item -->
 			</div>
 
-			<div class="row">
+			<!-- <div class="row"> -->
 				<!-- paginator -->
-				<div class="col-12">
+				<!-- <div class="col-12"> -->
 					<!-- paginator mobile -->
-					<div class="paginator-mob">
+					<!-- <div class="paginator-mob">
 						<span class="paginator-mob__pages">18 of 1713</span>
 
 						<ul class="paginator-mob__nav">
@@ -755,7 +842,7 @@
 								</a>
 							</li>
 						</ul>
-					</div>
+					</div> -->
 					<!-- end paginator mobile -->
 
 					<!-- paginator desktop -->
@@ -1165,7 +1252,7 @@
 		<div class="footer-content">
 		  <aside class="footer-brand">
 			<div class="footer-icon p-0">
-			  <a href="index.html"><img src="img/new-images/logo1.png" alt="image"></a>
+			  <a href="index.html"><img src="img/new-images/logooo.png" alt="image"></a>
 			</div>
 			<p class="brand-text">
 			  Bharat Gaurav Samman
@@ -1298,7 +1385,7 @@
 		.footer-bottom p {
 		  text-align: center;
 		  padding: 10px;
-		  color: #000;
+		  color: #330202;
 		  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 		  font-size: 18px;
 		}
